@@ -35,7 +35,14 @@ const AddDoctor = () => {
       });
   };
   return (
-    <div>
+    <div
+      style={{
+        background: "#033E3E",
+        marginTop: "-50px",
+        height: "700px",
+        paddingTop: "70px",
+      }}
+    >
       <h3>Add A Doctor</h3>
       <form onSubmit={handleSubmit}>
         <TextField
@@ -46,6 +53,7 @@ const AddDoctor = () => {
           variant="standard"
         />
         <br />
+        <br />
         <TextField
           sx={{ width: "50%" }}
           label="Email"
@@ -55,13 +63,16 @@ const AddDoctor = () => {
           variant="standard"
         />
         <br />
+        <br />
         <Input
           accept="image/*"
           type="file"
+          sx={{ width: "50%" }}
           onChange={(e) => setImage(e.target.files[0])}
         />
         <br />
-        <Button variant="contained" type="submit">
+        <br />
+        <Button variant="contained" type="submit" sx={{ width: "50%" }}>
           Add Doctor
         </Button>
       </form>

@@ -12,6 +12,7 @@ const Doctors = () => {
   return (
     <div>
       <Container>
+        <h1>Doctors We Provided</h1>
         <Grid container spacing={2}>
           {doctors.map((doctor) => (
             <Doctor doctor={doctor} key={doctor._id}></Doctor>

@@ -9,7 +9,7 @@ import Treatment from "../Treatment/Treatment";
 
 const Home = () => {
   return (
-    <div>
+    <div style={{ background: "#033E3E" }}>
       <Navigation></Navigation>
       <Banner></Banner>
       <Services></Services>
